@@ -3,7 +3,7 @@
   "name": "Infinity Access",
   "version": "1.0",
   "description": "Accesibilidad sin Límites",
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["activeTab","tabs", "scripting", "contextMenus", "tts"],
   "background": {
     "service_worker": "background.js"
   },
@@ -16,5 +16,5 @@
   "action": {
     "default_popup": "infinity_access_menu.html",
     "default_icon": "logo.png"
-  }
+  } 
 }

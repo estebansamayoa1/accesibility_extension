@@ -1,11 +1,25 @@
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
-      if(request.action === "applyFilter") {
+
+      if(request.action === "option1") {
         const filterStyle = document.createElement('style');
-        filterStyle.innerHTML = `html { filter: contrast(125%) hue-rotate(-10deg) saturate(150%) !important; }`;
-        document.head.appendChild(filterStyle);
+        filterStyle.innerHTML = `html { filter: grayscale(100%) brightness(100%); }`;
+        document.head.appendChild(filterStyle); 
+      }
+      if(request.action === "option2") {
+        const filterStyle = document.createElement('style');
+        filterStyle.innerHTML = `html { filter: saturate(150%) hue-rotate(45deg) brightness(100%); }`;
+        document.head.appendChild(filterStyle); 
+      }
+      if(request.action === "option3") {
+        const filterStyle = document.createElement('style');
+        filterStyle.innerHTML = `html { filter: invert(100%); }`;
+        document.head.appendChild(filterStyle); 
+      }
+      if(request.action === "option4") {
+        const filterStyle = document.createElement('style');
+        filterStyle.innerHTML = `html { filter: saturate(150%) hue-rotate(90deg) brightness(100%); }`;
+        document.head.appendChild(filterStyle); 
       }
     }
   );
-
-
