@@ -1,1 +1,1 @@
-# Accesibility Google Chrp
+# Accesibility Google Chrome Extension
