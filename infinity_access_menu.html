@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chrome Extension Mockup</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF1A8;
+    margin: 0;
+    border: 8px solid #FFF1A8;
+  }
+  .dropdown {
+    background-color: #FF8B13;
+    border: 1px solid #FF8B13;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #FF8B13;
+    border-bottom: 1px solid #ccc;
+  }
+  .dropdown-header:hover {
+    background-color: #d0d0d0;
+  }
+  .dropdown-header h1 {
+    font-size: 16px;
+    margin: 0;
+  }
+  .dropdown-content {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+
+  .slider:hover {
+    opacity: 1;
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+  .logo-container {
+    text-align: center;
+    background-color: #FFF1A8;
+    padding: 10px 0;
+  }
+
+  .logo-container img {
+    width: 200px; 
+    height: auto;
+  }
+</style>
+</head>
+<body>
+<div class="logo-container">
+  <img src="logo_blanco.png" alt="InfinityAccess Logo">
+</div>
+<br>
+<div class="dropdown">
+  <div class="dropdown-header">
+    <img src="perfil.png" alt="User Icon" class="icon">
+    <h1>Adrian</h1>
+    <span>▼</span>
+  </div>
+  <div class="dropdown-content">
+    <p><strong>Name:</strong> Adrian Gutierrez</p>
+    <p><strong>Age:</strong> 22 años </p>
+    <p><strong>Diagnosis:</strong> Daltonismo -TRINATOPIA</p>
+    <p><strong>Email:</strong> adriangutierrez@gmail.com</p>
+  </div>
+</div>
+<br>
+<div class="dropdown">
+  <div class="dropdown-header">
+    <img src="daltonismo.png" alt="Daltonism Icon" class="icon">
+    <h1>Daltonismo</h1>
+    <span>▼</span>
+  </div>
+  <div class="dropdown-content">
+    <label for="daltonismoRange">Adjust Daltonismo settings:</label>
+    <input type="range" id="daltonismoRange" name="daltonismoRange"
+           min="0" max="100" value="50" class="slider">
+    <button id="applyFilterButton">Apply Color Filter</button>
+    <script src="popup.js"></script>
+  </div>
+</div>
+<br>
+<div class="dropdown">
+  <div class="dropdown-header">
+    <img src="blind.png" alt="Daltonism Icon" class="icon">
+    <h1>Ceguera</h1>
+    <span>▼</span>
+  </div>
+  <div class="dropdown-content">
+    <
+  </div>
+</div>
+
+
+</body>
+</html>
+
