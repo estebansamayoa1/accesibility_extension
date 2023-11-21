@@ -15,6 +15,6 @@
   ],
   "action": {
     "default_popup": "infinity_access_menu.html",
-    "default_icon": "logo.png"
+    "default_icon": "src/logo.png"
   } 
 }

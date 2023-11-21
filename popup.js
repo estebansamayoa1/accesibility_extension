@@ -31,4 +31,6 @@ document.getElementById('applyFilters').addEventListener('click', () => {
     });
   });
 
+  
+
 

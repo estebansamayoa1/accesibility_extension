@@ -32,10 +32,10 @@
         .setting input[type="text"],
         .setting input[type="number"],
         .setting select {
-            width: 100%;
+            width: 85%;
             padding: 10px;
             border: 1px solid #ddd;
-            border-radius: 4px;
+            border-radius: 10px;
         }
         button {
             background-color: #007bff;
@@ -51,8 +51,9 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Profile Settings</h2>
+    <div style="text-align: center;" class="container">
+        <img src="src/logo.png" alt="Settings Icon" class="settings-icon">
+        <h2>INFINITY ACCESS - PROFILE SETTINGS</h2>
         <div class="setting">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name">
@@ -64,10 +65,11 @@
         <div class="setting">
             <label for="diagnosis">Diagnosis:</label>
             <select id="diagnosis" name="diagnosis">
-                <option value="daltonism">Daltonism</option>
+                <option value="daltonism">Daltonism - Deuteranopia</option>
+                <option value="daltonism">Daltonism - Protanopia</option>
+                <option value="daltonism">Daltonism - Tritanopia</option>
                 <option value="ceguera">Ceguera</option>
                 <option value="vejez">Vejez</option>
-                
             </select>
         </div>
         <div class="setting">
@@ -76,5 +78,6 @@
         </div>
         <button>Save Changes</button>
     </div>
+
 </body>
 </html>
