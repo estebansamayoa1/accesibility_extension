@@ -10,11 +10,11 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["content.js","textSize.js"]
     }
   ],
   "action": {
     "default_popup": "infinity_access_menu.html",
     "default_icon": "src/logo.png"
-  } 
+  }
 }

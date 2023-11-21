@@ -162,7 +162,7 @@ button:active {
     <h1>Daltonismo</h1>
     <span>▼</span>
   </div>
-  <div class="dropdown-content">
+  <div style="text-align: center;" class="dropdown-content">
     <h3>Predetermined Filters</h3>
     <button id="option1" >Filter 1</button>
     <button id="option2" >Filter 2</button>
@@ -211,11 +211,30 @@ button:active {
     <h1>Vejez</h1>
     <span>▼</span>
   </div>
-  <div class="dropdown-content">
+  <div style="text-align: center;" class="dropdown-content">
+    <button id="decrease-text-size">-</button>
+    <button id="increase-text-size">+</button>
+  </div>
+</div>
+
+<br>
+
+<div class="dropdown">
+  <div class="dropdown-header">
+    <img src="src/textsize.png" alt="Vejez icono" class="icon">
+    <h1>Ajustar texto</h1>
+    <span>▼</span>
+  </div>
+  <div style="text-align: center;" class="dropdown-content">
+    <button id="decreaseTextSize">-</button>
+    <button id="increaseTextSize">+</button>
   </div>
 </div>
 
 <script src="settings.js"></script>
+<script src="textSize.js"></script>
+<script src="websiteTextSize.js"></script>
+
 
 </body>
 </html>
