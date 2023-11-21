@@ -128,12 +128,57 @@ button:active {
   height: 30px;
 }
 
+
+
+
+.button-63 {
+  align-items: center;
+  background-image: linear-gradient(144deg, #f6c795, #ff8400 50%, rgb(136, 70, 0));
+  border: 0;
+  border-radius: 15px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 13px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 80%;
+  min-width: 100px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-63:active,
+.button-63:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-63 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
 </style>
 
 
 
 </head>
 <body>
+  <div>
+    <button class="button-63" role="button" id="tutorial">TUTORIAL</button>
+
+  </div>
+  
+
   <button class="settings-button" id="settingsButton" onclick="openSettings()">
     <img src="src/engranaje.png" alt="Settings Icon" class="settings-icon">
   </button>
