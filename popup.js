@@ -31,6 +31,19 @@ document.getElementById('applyFilters').addEventListener('click', () => {
     });
   });
 
+
+
   
+//Incrementar el tamaño de la letra de una página web
 
+document.getElementById('increase-text-size').addEventListener('click', () => {
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        chrome.tabs.sendMessage(tabs[0].id, {action: "increaseTextSize"});
+    });
+});
 
+document.getElementById('decrease-text-size').addEventListener('click', () => {
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        chrome.tabs.sendMessage(tabs[0].id, {action: "decreaseTextSize"});
+    });
+});
