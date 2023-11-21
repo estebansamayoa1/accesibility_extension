@@ -106,7 +106,7 @@
 }
 
 button:hover {
-    background-color: yellow; 
+    background-color: rgb(220, 146, 36); 
 }
 
 button:active {
@@ -114,19 +114,30 @@ button:active {
     box-shadow: 0 5px #666; 
 }
 
+.settings-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
 
-
-
-
-
-
-
-
-
+.settings-icon {
+  width: 30px; 
+  height: 30px;
+}
 
 </style>
 </head>
 <body>
+  <button class="settings-button" onclick="openSettings()">
+    <img src="engranaje.png" alt="Settings Icon" class="settings-icon">
+  </button>
+  <div>
+    <br>
+    <br>
+  </div>
 <div class="logo-container">
   <img src="logo_blanco.png" alt="InfinityAccess Logo">
 </div>
@@ -193,6 +204,17 @@ button:active {
   <div class="dropdown-content">
   </div>
 </div>
+<br>
+<div class="dropdown">
+  <div class="dropdown-header">
+    <img src="vejez.png" alt="Vejez icono" class="icon">
+    <h1>Vejez</h1>
+    <span>▼</span>
+  </div>
+  <div class="dropdown-content">
+  </div>
+</div>
+
 
 
 </body>
