@@ -18,15 +18,21 @@
         background-color: #333;
         color: white;
         padding: 10px 20px;
-        text-align: center;
         display: flex;
-        justify-content: space-between;
+        justify-content: center; 
         align-items: center;
     }
+
+    .barra-superior .barra-titulo {
+        flex-grow: 1; 
+        text-align: center; 
+    }
+    
     
     .barra-superior .logo {
         width: 50px;
         height: auto;
+        position: relative;
     }
     
     .contenedor-pasos {
@@ -34,14 +40,28 @@
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 10px;
         padding: 20px;
+        height: 450px;
     }
+
     
-    .paso {
-        background-color: white;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        text-align: center;
+    
+.paso {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    text-align: center; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 500px;
+}
+
+    .paso h2 {
+        margin-top: 0;
+        color: #FF8B13; 
+        font-size: 1.5em; 
     }
     
     @media (max-width: 600px) {
@@ -53,16 +73,34 @@
 </style>
 
 <body>
-    <div class="barra-superior">
-        <h1>Infinity Access Extension Tutorial</h1>
-        <img src="src/logo.png" alt="Logo" class="logo">
-    </div>
-    <div class="contenedor-pasos">
-        <div class="paso">Paso 1: Descripción del paso 1</div>
-        <div class="paso">Paso 2: Descripción del paso 2</div>
-        <div class="paso">Paso 3: Descripción del paso 3</div>
-        <div class="paso">Paso 4: Descripción del paso 4</div>
-        <div class="paso">Paso 5: Descripción del paso 5</div>
-    </div>
+    <body>
+        <div class="barra-superior">
+            <h1>Infinity Access Extension Tutorial</h1>
+            <img src="src/logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="contenedor-pasos">
+            <div class="paso">
+                <h2>Paso 1</h2>
+                <p>Ir al marketplace de extensiones de Google Chrome y buscar "Ininity Access"</p>
+            </div>
+            
+            <div class="paso">
+                <h2>Paso 2</h2>
+                <p>Instalar la extensión en el navegador</p>
+            </div>
+            <div class="paso">
+                <h2>Paso 3</h2>
+                <p>Llenar la información del perfil, indicando el tipo de discapacidad visual que padece.</p>
+            </div>
+            <div class="paso">
+                <h2>Paso 4</h2>
+                <p>Aplicar los filtros correspondientes según la discapacidad. Se puede ir jugando con los filtros para ver cual es el que mejor se adapta a sus necesidades.</p>
+            </div>
+            <div class="paso">
+                <h2>Paso 5</h2>
+                <p>¡Disfrutar de la navegación en Google Chrome!</p>
+            </div>
+        </div>
+    </body>
+    
 </body>
-</html>
