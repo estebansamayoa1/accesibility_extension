@@ -1,3 +1,12 @@
+function changeTextSize(delta) {
+  document.querySelectorAll('body, body *').forEach(element => {
+      const style = window.getComputedStyle(element);
+      const fontSize = parseFloat(style.fontSize);
+      element.style.fontSize = (fontSize + delta) + 'px';
+  });
+}
+
+
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
 
