@@ -5,7 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutorial</title>
 </head>
-<body>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
     
+    .barra-superior {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .barra-superior .logo {
+        width: 50px;
+        height: auto;
+    }
+    
+    .contenedor-pasos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+        padding: 20px;
+    }
+    
+    .paso {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        text-align: center;
+    }
+    
+    @media (max-width: 600px) {
+        .contenedor-pasos {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+</style>
+
+<body>
+    <div class="barra-superior">
+        <h1>Mi Tutorial</h1>
+        <img src="logo.png" alt="Logo" class="logo">
+    </div>
+    <div class="contenedor-pasos">
+        <div class="paso">Paso 1: Descripción del paso 1</div>
+        <div class="paso">Paso 2: Descripción del paso 2</div>
+        <div class="paso">Paso 3: Descripción del paso 3</div>
+        <div class="paso">Paso 4: Descripción del paso 4</div>
+        <div class="paso">Paso 5: Descripción del paso 5</div>
+    </div>
 </body>
 </html>
