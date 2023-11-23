@@ -21,5 +21,15 @@ chrome.runtime.onMessage.addListener(
         filterStyle.innerHTML = `html { filter: saturate(150%) hue-rotate(90deg) brightness(100%); }`;
         document.head.appendChild(filterStyle); 
       }
+      if (request.action === "applyFilters") {
+        const filters = request.filters;
+        const filterStyle = `brightness(${filters.brightness}%) 
+                             saturate(${filters.saturation}%) 
+                             hue-rotate(${filters.hue}deg) 
+                             invert(${filters.invert}%) 
+                             sepia(${filters.sepia}%)`;
+
+        document.body.style.filter = filterStyle;
+    }
     }
   );
