@@ -115,9 +115,9 @@ button:active {
 }
 
 .settings-button {
-  position: fixed;
-  top: 10px;
-  right: 10px;
+  position: relative;
+  top: -50px;
+  left: 130px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -175,16 +175,9 @@ button:active {
 <body>
   <div>
     <button class="button-63" role="button" id="tutorialbutton" onclick="openTutorial()">TUTORIAL</button>
-
-  </div>
-  
-
-  <button class="settings-button" id="settingsButton" onclick="openSettings()">
-    <img src="src/engranaje.png" alt="Settings Icon" class="settings-icon">
-  </button>
-  <div>
-    <br>
-    <br>
+    <button class="settings-button" id="settingsButton" onclick="openSettings()">
+      <img src="src/engranaje.png" alt="Settings Icon" class="settings-icon">
+    </button>
   </div>
 <div class="logo-container">
   <img src="src/logo_blanco.png" alt="InfinityAccess Logo">
@@ -235,11 +228,11 @@ button:active {
     <input type="range" id="sepia" name="sepia"
            min="0" max="100" value="50" class="slider">
     <button id="applyFilters" >Apply Filters</button>
-    <script src="popup.js"></script>
     <br>
     <br>
     <br>
     <button id="reset" >Reset Filters</button>
+    <script src="popup.js"></script>
   </div>
 </div>
 <br>

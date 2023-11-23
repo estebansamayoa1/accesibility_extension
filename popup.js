@@ -71,3 +71,17 @@ document.getElementById('applyFilters').addEventListener('click', () => {
       });
 });
 
+
+document.addEventListener('DOMContentLoaded', function() {
+  const resetButton = document.getElementById('reset');
+  if (resetButton) {
+      resetButton.addEventListener('click', function() {
+          chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+              chrome.tabs.sendMessage(tabs[0].id, {action: "resetFilters"});
+          });
+      });
+  } else {
+      console.error('Button with ID "reset" not found.');
+  }
+});
+

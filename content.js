@@ -31,5 +31,8 @@ chrome.runtime.onMessage.addListener(
 
         document.body.style.filter = filterStyle;
     }
+    if (request.action === "resetFilters") {
+      document.body.style.filter = ''; // Reset filters
+    }
     }
   );
