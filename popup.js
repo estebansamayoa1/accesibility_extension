@@ -25,29 +25,29 @@ document.getElementById('option4').addEventListener('click', () => {
     });
   });
 
-document.getElementById('applyFilters').addEventListener('click', () => {
-    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-      chrome.tabs.sendMessage(tabs[0].id, {action: "option4"});
-    });
-  });
+
+// document.getElementById('increase-text-size').addEventListener('click', () => {
+//     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+//         chrome.tabs.sendMessage(tabs[0].id, {action: "increaseTextSize"});
+//     });
+// });
+
+// document.getElementById('decrease-text-size').addEventListener('click', () => {
+//     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+//         chrome.tabs.sendMessage(tabs[0].id, {action: "decreaseTextSize"});
+//     });
+// });
 
 
+// document.getElementById('increaseTextSize').addEventListener('click', function() {
+//   const allElements = document.getElementsByTagName('*');
 
-  
-//Incrementar el tamaño de la letra de una página web
-
-document.getElementById('increase-text-size').addEventListener('click', () => {
-    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-        chrome.tabs.sendMessage(tabs[0].id, {action: "increaseTextSize"});
-    });
-});
-
-document.getElementById('decrease-text-size').addEventListener('click', () => {
-    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-        chrome.tabs.sendMessage(tabs[0].id, {action: "decreaseTextSize"});
-    });
-});
-
+//   for (let i = 0; i < allElements.length; i++) {
+//       const currentStyle = window.getComputedStyle(allElements[i]).fontSize;
+//       const currentSize = parseFloat(currentStyle); 
+//       allElements[i].style.fontSize = (currentSize + 1) + 'px';
+//   }
+// });
 
 
 document.getElementById('applyFilters').addEventListener('click', () => {
